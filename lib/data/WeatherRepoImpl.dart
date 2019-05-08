@@ -3,6 +3,9 @@ import 'package:weather_flutter/data/remote/WeatherApi.dart';
 import 'package:weather_flutter/model/Weather.dart';
 import 'package:weather_flutter/repo/WeatherRepo.dart';
 
+
+/// WeatherRepoImpl sẽ mang theo WeatherApi để truy vấn dữ liệu của api, và WeatherDao để thao tác với dữ liệu trong database
+
 class WeatherRepoImpl with WeatherRepo {
   static WeatherRepo instance;
 
@@ -13,8 +16,8 @@ class WeatherRepoImpl with WeatherRepo {
     return instance;
   }
 
-  WeatherApi weatherApi = WeatherApi();
-  WeatherDao weatherDao = WeatherDao();
+  WeatherApi weatherApi = WeatherApi(); /// truy vấn dữ liệu của api
+  WeatherDao weatherDao = WeatherDao(); /// WeatherDao để thao tác với dữ liệu trong database
 
   @override
   Future<Weather> getWeatherByLocation(String location) async {

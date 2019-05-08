@@ -1,3 +1,6 @@
+
+/// @Model thoi tiet
+
 class Weather {
   int id;
   String location;

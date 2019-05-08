@@ -11,6 +11,7 @@ class WeatherApi {
   Future<Weather> findWeatherByLocation(String location) async {
     String url =
         "$BASE_URL/$WEATHER?$QUERY_PARAM=$location&$APP_ID_PARAM=$APP_ID";
+    print(url);
     var response;
     try {
       response = await client.get(url);

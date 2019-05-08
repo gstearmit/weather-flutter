@@ -1,5 +1,7 @@
-
 import 'package:weather_flutter/model/Weather.dart';
+
+/// abstract
+/// WeatherRepo sẽ được sử dụng trong ViewModel và dùng để thao tác với các cơ sở dữ liệu (từ database hoặc api)
 
 abstract class WeatherRepo {
 
