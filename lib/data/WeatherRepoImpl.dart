@@ -5,6 +5,7 @@ import 'package:weather_flutter/repo/WeatherRepo.dart';
 
 
 /// WeatherRepoImpl sẽ mang theo WeatherApi để truy vấn dữ liệu của api, và WeatherDao để thao tác với dữ liệu trong database
+/// WeatherRepoImpl là implement cua WeatherRepo
 
 class WeatherRepoImpl with WeatherRepo {
   static WeatherRepo instance;
